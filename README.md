@@ -35,7 +35,8 @@ At 400K over the 500ps trajectory, **legumin exhibits a compaction signature** �
 ├── notebooks/                 # Full analysis pipeline (Colab-executed)
 └── docs/
     └── methods.md             # Detailed methodology, software versions, parameters
-    ## Methods Summary
+   
+ ## Methods Summary
 
 | Stage | Tool | Details |
 |---|---|---|
