@@ -23,7 +23,7 @@ Both proteins were modeled as homodimers and simulated at two temperatures (300K
 At 400K over the 500ps trajectory, **legumin exhibits a compaction signature** — radius of gyration and SASA both decrease while hydrogen bond count increases after ~250–300ps — concentrated in the 260–320 residue loop region, with clear chain-to-chain asymmetry between the two monomers. This suggests a thermally-induced conformational tightening localized to a specific structural region rather than a uniform global response, a detail relevant to understanding thermal processing effects on this protein's functional behavior.
 
 ## Repository Structure
-├── structures/              # AlphaFold3 output structures (.cif) and processed dimer PDBs
+── structures/              # AlphaFold3 output structures (.cif) and processed dimer PDBs
 ├── alphafold_predictions/    # AlphaFold confidence (pLDDT) and chain-colored visualizations
 ├── simulations/              # Raw analysis output (.xvg) per protein, per condition
 │   ├── legumin/
