@@ -23,18 +23,19 @@ Both proteins were modeled as homodimers and simulated at two temperatures (300K
 At 400K over the 500ps trajectory, **legumin exhibits a compaction signature** — radius of gyration and SASA both decrease while hydrogen bond count increases after ~250–300ps — concentrated in the 260–320 residue loop region, with clear chain-to-chain asymmetry between the two monomers. This suggests a thermally-induced conformational tightening localized to a specific structural region rather than a uniform global response, a detail relevant to understanding thermal processing effects on this protein's functional behavior.
 
 ## Repository Structure
-── structures/              # AlphaFold3 output structures (.cif) and processed dimer PDBs
-├── alphafold_predictions/    # AlphaFold confidence (pLDDT) and chain-colored visualizations
-├── simulations/              # Raw analysis output (.xvg) per protein, per condition
-│   ├── legumin/
-│   └── vicilin/
-├── analysis/
-│   ├── individual_plots/     # Per-protein, per-metric plots
-│   └── comparison_plots/     # Direct Legumin-vs-Vicilin comparison plots per condition
-├── movies/                    # Rendered MD trajectory visualizations (PyMOL)
-├── notebooks/                 # Full analysis pipeline (Colab-executed)
-└── docs/
-    └── methods.md             # Detailed methodology, software versions, parameters
+──
+├── 𝘴𝘵𝘳𝘶𝘤𝘵𝘶𝘳𝘦𝘴/              # 𝘈𝘭𝘱𝘩𝘢𝘍𝘰𝘭𝘥3 𝘰𝘶𝘵𝘱𝘶𝘵 𝘴𝘵𝘳𝘶𝘤𝘵𝘶𝘳𝘦𝘴 (.𝘤𝘪𝘧) 𝘢𝘯𝘥 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘦𝘥 𝘥𝘪𝘮𝘦𝘳 𝘗𝘋𝘉𝘴
+├── 𝘢𝘭𝘱𝘩𝘢𝘧𝘰𝘭𝘥_𝘱𝘳𝘦𝘥𝘪𝘤𝘵𝘪𝘰𝘯𝘴/    # 𝘈𝘭𝘱𝘩𝘢𝘍𝘰𝘭𝘥 𝘤𝘰𝘯𝘧𝘪𝘥𝘦𝘯𝘤𝘦 (𝘱𝘓𝘋𝘋𝘛) 𝘢𝘯𝘥 𝘤𝘩𝘢𝘪𝘯-𝘤𝘰𝘭𝘰𝘳𝘦𝘥 𝘷𝘪𝘴𝘶𝘢𝘭𝘪𝘻𝘢𝘵𝘪𝘰𝘯𝘴
+├── 𝘴𝘪𝘮𝘶𝘭𝘢𝘵𝘪𝘰𝘯𝘴/              # 𝘙𝘢𝘸 𝘢𝘯𝘢𝘭𝘺𝘴𝘪𝘴 𝘰𝘶𝘵𝘱𝘶𝘵 (.𝘹𝘷𝘨) 𝘱𝘦𝘳 𝘱𝘳𝘰𝘵𝘦𝘪𝘯, 𝘱𝘦𝘳 𝘤𝘰𝘯𝘥𝘪𝘵𝘪𝘰𝘯
+│   ├── 𝘭𝘦𝘨𝘶𝘮𝘪𝘯/
+│   └── 𝘷𝘪𝘤𝘪𝘭𝘪𝘯/
+├── 𝘢𝘯𝘢𝘭𝘺𝘴𝘪𝘴/
+│   ├── 𝘪𝘯𝘥𝘪𝘷𝘪𝘥𝘶𝘢𝘭_𝘱𝘭𝘰𝘵𝘴/     # 𝘗𝘦𝘳-𝘱𝘳𝘰𝘵𝘦𝘪𝘯, 𝘱𝘦𝘳-𝘮𝘦𝘵𝘳𝘪𝘤 𝘱𝘭𝘰𝘵𝘴
+│   └── 𝘤𝘰𝘮𝘱𝘢𝘳𝘪𝘴𝘰𝘯_𝘱𝘭𝘰𝘵𝘴/     # 𝘋𝘪𝘳𝘦𝘤𝘵 𝘓𝘦𝘨𝘶𝘮𝘪𝘯-𝘷𝘴-𝘝𝘪𝘤𝘪𝘭𝘪𝘯 𝘤𝘰𝘮𝘱𝘢𝘳𝘪𝘴𝘰𝘯 𝘱𝘭𝘰𝘵𝘴 𝘱𝘦𝘳 𝘤𝘰𝘯𝘥𝘪𝘵𝘪𝘰𝘯
+├── 𝘮𝘰𝘷𝘪𝘦𝘴/                    # 𝘙𝘦𝘯𝘥𝘦𝘳𝘦𝘥 𝘔𝘋 𝘵𝘳𝘢𝘫𝘦𝘤𝘵𝘰𝘳𝘺 𝘷𝘪𝘴𝘶𝘢𝘭𝘪𝘻𝘢𝘵𝘪𝘰𝘯𝘴 (𝘗𝘺𝘔𝘖𝘓)
+├── 𝘯𝘰𝘵𝘦𝘣𝘰𝘰𝘬𝘴/                 # 𝘍𝘶𝘭𝘭 𝘢𝘯𝘢𝘭𝘺𝘴𝘪𝘴 𝘱𝘪𝘱𝘦𝘭𝘪𝘯𝘦 (𝘊𝘰𝘭𝘢𝘣-𝘦𝘹𝘦𝘤𝘶𝘵𝘦𝘥)
+└── 𝘥𝘰𝘤𝘴/
+    └── 𝘮𝘦𝘵𝘩𝘰𝘥𝘴.𝘮𝘥             # 𝘋𝘦𝘵𝘢𝘪𝘭𝘦𝘥 𝘮𝘦𝘵𝘩𝘰𝘥𝘰𝘭𝘰𝘨𝘺, 𝘴𝘰𝘧𝘵𝘸𝘢𝘳𝘦 𝘷𝘦𝘳𝘴𝘪𝘰𝘯𝘴, 𝘱𝘢𝘳𝘢𝘮𝘦𝘵𝘦𝘳𝘴
    
  ## Methods Summary
 
