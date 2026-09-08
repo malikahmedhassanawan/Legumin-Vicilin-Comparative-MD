@@ -26,6 +26,7 @@ At 400K over the 500ps trajectory, **legumin exhibits a compaction signature** �
 
 - **structures/** — AlphaFold3 output structures (.cif) and processed dimer PDBs
 - **alphafold_predictions/** — AlphaFold confidence (pLDDT) and chain-colored visualizations
+- **simulation_setup/** - GROMACS .mdp parameter files for both proteins (complete: em, ions, nvt, npt, md × 4 conditions each) 
 - **simulations/** — Raw analysis output (.xvg) per protein, per condition
 - **analysis/** — Individual and comparison plots
 - **movies/** — Rendered MD trajectory visualizations (PyMOL)
