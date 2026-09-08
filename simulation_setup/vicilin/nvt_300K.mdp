@@ -1,4 +1,4 @@
-title       = NVT equilibration
+title       = NVT equilibration 300K
 define      = -DPOSRES
 integrator  = md
 nsteps      = 50000
