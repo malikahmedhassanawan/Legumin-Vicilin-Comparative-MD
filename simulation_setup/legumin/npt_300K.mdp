@@ -1,4 +1,4 @@
-title       = NPT equilibration
+title       = NPT equilibration 300k
 define      = -DPOSRES
 integrator  = md
 nsteps      = 50000
