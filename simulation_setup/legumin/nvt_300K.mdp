@@ -1,0 +1,40 @@
+title       = NVT equilibration
+integrator  = md
+nsteps      = 50000
+dt          = 0.002
+; Output control
+nstxout     = 5000
+nstvout     = 5000
+nstfout     = 5000
+nstlog      = 5000
+nstenergy   = 5000
+nstxtc      = 5000
+; Neighbor searching
+cutoff-scheme   = Verlet
+nstlist         = 10
+ns_type         = grid
+rlist           = 1.0
+; Electrostatics
+coulombtype     = PME
+rcoulomb        = 1.0
+; Van der Waals
+rvdw            = 1.0
+vdwtype         = Cut-off
+vdw-modifier    = Force-switch
+rvdw-switch     = 0.9
+; Temperature coupling
+tcoupl      = V-rescale             ; V-rescale thermostat
+tc-grps     = Protein Non-Protein   ; Two temperature groups
+tau_t       = 0.1   0.1             ; Time constant for temperature coupling
+ref_t       = 300   300             ; Reference temperature (K)
+; Pressure coupling
+pcoupl      = no
+; Constraints
+constraints     = h-bonds           ; Constrain all bonds involving H-atoms
+constraint_algorithm = lincs
+continuation    = no                ; Start a new simulation
+; Velocities
+gen_vel         = yes
+gen_temp        = 300
+gen_seed        = -1
+pbc             = xyz
