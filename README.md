@@ -87,7 +87,7 @@ simulations and, ideally, experimental thermal analysis (e.g., DSC, circular dic
 - **alphafold_predictions/** — AlphaFold confidence (pLDDT) and chain-colored visualizations
 - **simulation_setup/** - GROMACS .mdp parameter files for both proteins (complete: em, ions, nvt, npt, md × 4 conditions each) 
 - **simulations/** — Raw analysis output (.xvg) per protein, per condition
-- **analysis/** — Individual and comparison plots
+- - **analysis/** — `legumin/` and `vicilin/` hold per-protein plots (RMSD, Rg, SASA, H-bonds, RMSF) across all four conditions; `comparison/legumin_vs_vicilin/` holds head-to-head plots per condition, including relative/normalized Rg and SASA comparisons; `summary_table.csv`/`.md` condenses all 8 conditions into one numeric table referenced in Key Findings
 - **movies/** — Rendered MD trajectory visualizations (PyMOL)
 - **notebooks/** — Full analysis pipeline (Colab-executed)
 - **docs/methods.md** — Detailed methodology, software versions, parameters
